@@ -30,7 +30,7 @@ Steps:
      ssh-copy-id -i ~/.ssh/id_rsa.pub -o "IdentityFile=~/.ssh/devops.pem" ec2-user@<instance-ip>
 	  
   3. Added host entries in the SSH config file for easy login:
-   ```bash
+     ```bash
       Host ec2-instance-1
       HostName <instance-ip>
       User ec2-user
