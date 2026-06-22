@@ -25,8 +25,7 @@ Steps:
       ssh-keygen -t rsa
 	 
   2. Copied the public key to each EC2 instance using :
-     
-      ssh-copy-id -i ~/.ssh/id_rsa.pub -o "IdentityFile=~/.ssh/devops.pem" ec2-user@<instance-ip>
+     ssh-copy-id -i ~/.ssh/id_rsa.pub -o "IdentityFile=~/.ssh/devops.pem" ec2-user@<instance-ip>
 	  
   4. Added host entries in the SSH config file for easy login:
       Host ec2-instance-1
