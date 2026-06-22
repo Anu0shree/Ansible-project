@@ -37,7 +37,6 @@ Steps:
       IdentityFile ~/.ssh/devops.pem
 	  
   4. After setup, I was able to connect using aliases like:
-     ```bash
      ssh ec2-instance-1
 	 
 Concepts used: ssh-keygen, ssh-copy-id, passwordless SSH, SSH config
