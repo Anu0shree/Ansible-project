@@ -25,15 +25,16 @@ Steps:
       ssh-keygen -t rsa
 	 
   2. Copied the public key to each EC2 instance using :
+     
       ssh-copy-id -i ~/.ssh/id_rsa.pub -o "IdentityFile=~/.ssh/devops.pem" ec2-user@<instance-ip>
 	  
-  3. Added host entries in the SSH config file for easy login:
+  4. Added host entries in the SSH config file for easy login:
       Host ec2-instance-1
       HostName <instance-ip>
       User ec2-user
       IdentityFile ~/.ssh/devops.pem
 	  
-  4. After setup, I was able to connect using aliases like:
+  5. After setup, I was able to connect using aliases like:
      ssh ec2-instance-1
 	 
 Concepts used: ssh-keygen, ssh-copy-id, passwordless SSH, SSH config
